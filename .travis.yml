@@ -2,3 +2,11 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy:
+  provider: heroku
+  api_key:
+    secure: uY48HPEoGgyo/ohjtT7/DgOIRANIDqZqCu+9T4/kM45p8qEm36giH0zZJ54xDr4fGm3OgS1NDToYXVnH1GSa+ivKsqXRfNdhWdS8njRMh5HHkV/QriE7cvQCormo3gpBefd6yT9LSBbaiDb2hxhror3W17FNplKEzoQSBj4iUr7RuwJst5sBZuLKRfGJ6tbxJultNjJGzIt+S9t404G+h8nOc0qkFaWHKKSFS6qy1HEqciv1oNhyMQ7/I3Z1GWusBJ1vWOvCa3bsF1J5aRyFDLs+luQAdYJZ+r5o6lYenUCrPMz72ncWj2jtUmWWAOzunwiJHGzntnA8cm0GUmYfm7hpk1r3lf63DCChNV6fXq5p3eVsNrqc6ONO8Wf0T40tZqkdFx2IxaTMT/1+Te8FErbembgyq3jk5TrugdS9Cu8Nnzppx9DH3bQQ5X2cVe/UF8oJRJhUhWIWJ1zSI/0Hn2nUCcyYdAXMKL3ej3xOiyerx1iFL0icvTLHYmcmkxT7jDMyNdb6miOCTTESHernClEgDafQAKM7b68yqcqa3VGS1jvndcDPfyWEAdVpIfPmSb4ZxES0DlAhPY69YApVbi7T+SyR4T5fD71ex+Fmk0o0QJzU4gJqGo65UYy5p3qC47+wdzg/YcJopK0bpb9Xu0iwdduLk02UiLTnykVazRk=
+  app: obscure-mountain-66224
+  on:
+    repo: bdm88/node-restaurants-app-mongoose
+    branch: feature/with-tests
